@@ -19,7 +19,7 @@ public class Main {
                 catEat++;
                 cat[i].getAppetite();
                 if(plate.getFood()>= cat[i].getAppetite()){
-                    System.out.println(cat[i].eat(plate));
+                    System.out.println(cat[i].eat(plate, cat[i]));
                 }else if(plate.getBagEat() >=0 &&plate.getFood()<cat[i].getAppetite()){
                     System.out.println(cat[i].notEat(plate));
                 }
@@ -33,7 +33,6 @@ public class Main {
         System.out.print("Котов поело: "+ Cat.getCountEat());
         System.out.println(". Подходило к миске: "+ catEat);
         if(Cat.getCountEat() != cat.length * numberOfMeals) System.out.println("Еда кончилась, коты не наелись!");
-
     }
 }
 
