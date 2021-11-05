@@ -24,17 +24,12 @@ public class Plate {
     }
 
     public int getBagEat() {
-        //return this.addFood(this.food);
-        return this.bagEat = bagEat;
+        return this.bagEat;
     }
 
     public void setBagEat(int bagEat) {
         this.bagEat = bagEat;
     }
-
-//    public int getRemainsBagEat() {
-//        return this.remainsBagEat;
-//    }
 
     public int addFood(int food) {
         Scanner sc = new Scanner(System.in);
@@ -43,7 +38,6 @@ public class Plate {
             this.bagEat -= addFood;
             System.out.println("Еды в коробке осталось " + this.bagEat);
             food += addFood;
-            //this.remainsBagEat = this.bagEat - addFood;
             if(this.bagEat == 0){
                 getBagEat();
             }
@@ -57,6 +51,6 @@ public class Plate {
     }
 
     public String toString() {
-        return "Plate food= ";
+        return "Plate remained food= ";
     }
 }

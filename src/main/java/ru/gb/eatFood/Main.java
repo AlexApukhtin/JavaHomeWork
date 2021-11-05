@@ -12,7 +12,7 @@ public class Main {
                 new Cat(NameCats.MAYKA.name(), 0, false),
                 new Cat(NameCats.TIMOFHEY.name(), 0, false)
         };
-        Plate plate = new Plate(40);
+        Plate plate = new Plate(50);
 
         for(int j = 0; j < numberOfMeals; ++j) {
             for(int i = 0; i < cat.length; ++i) {
