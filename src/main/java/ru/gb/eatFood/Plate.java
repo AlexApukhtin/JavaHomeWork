@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Plate {
     private int food;
     private int bagEat = 50;
-   // private int remainsBagEat;
 
     public Plate(int food) {
         this.food = food;
@@ -23,13 +22,7 @@ public class Plate {
         this.food -= food;
     }
 
-    public int getBagEat() {
-        return this.bagEat;
-    }
-
-    public void setBagEat(int bagEat) {
-        this.bagEat = bagEat;
-    }
+    public int getBagEat() {return this.bagEat;}
 
     public int addFood(int food) {
         Scanner sc = new Scanner(System.in);

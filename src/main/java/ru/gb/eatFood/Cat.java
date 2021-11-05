@@ -30,15 +30,12 @@ public class Cat {
         return this.appetite;
     }
 
-    public int eat(Plate plate, Cat cat) {
-        if (plate.getFood() >= this.appetite) {
-            plate.decreaseFood(this.appetite);
-            this.satiety = true;
-            countEat++;
-            System.out.print(cat);
-            //System.out.printf("Ест кот: %s, аппетит: %d, сытость: %b\n",name ,appetite, satiety);
-            System.out.print(plate);
-        }
+    public int isEat(Plate plate, Cat cat) {
+        plate.decreaseFood(this.appetite);
+        this.satiety = true;
+        countEat++;
+        System.out.print(cat);
+        System.out.print(plate);
         return plate.getFood();
     }
 

@@ -19,7 +19,7 @@ public class Main {
                 catEat++;
                 cat[i].getAppetite();
                 if(plate.getFood()>= cat[i].getAppetite()){
-                    System.out.println(cat[i].eat(plate, cat[i]));
+                    System.out.println(cat[i].isEat(plate, cat[i]));
                 }else if(plate.getBagEat() >=0 &&plate.getFood()<cat[i].getAppetite()){
                     System.out.println(cat[i].notEat(plate));
                 }
