@@ -4,7 +4,7 @@ public class Cat extends Animal {
 
     private static int trueCat;
     private static int catScore;
-    private static int CAT_RUN_LIMIT = 200;
+    private static int CAT_RUN_LIMIT = 200;//
 
     public Cat(String name, int run, int swim) {
         super(name, run, swim);

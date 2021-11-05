@@ -2,7 +2,7 @@ package ru.gb.animal;
 
 public class Other extends Animal {
 
-    private static int otherScore;
+    private static int otherScore;//
 
     public Other(String name, int run, int swim, String view) {
         super(name, run, swim);

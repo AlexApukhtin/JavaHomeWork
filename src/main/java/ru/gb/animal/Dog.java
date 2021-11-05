@@ -5,7 +5,7 @@ public class Dog extends Animal{
     private static int trueDog;
     private static int dogScore;
     private static int DOG_RUN_LIMIT = 500;
-    private static int DOG_SWIM_LIMIT = 10;
+    private static int DOG_SWIM_LIMIT = 10;//
     public Dog(String name, int run, int swim) {
         super(name, run, swim);
         dogScore++;

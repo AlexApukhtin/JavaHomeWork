@@ -9,7 +9,7 @@ public abstract class Animal {
     private static int count;
 
     public Animal(String name,int run, int swim){
-        count++;
+        count++;//
         setName(name);
         setRun(run);
         setSwim(swim);
