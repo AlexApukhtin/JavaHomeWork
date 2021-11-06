@@ -12,7 +12,7 @@ public class Main {
                 new Cat(NameCats.MAYKA.name()),
                 new Cat(NameCats.TIMOFHEY.name())
         };
-        Plate plate = new Plate(50);
+        Plate plate = new Plate(100);
 
         for(int j = 0; j < numberOfMeals; ++j) {
             for(int i = 0; i < cat.length; ++i) {
@@ -23,7 +23,6 @@ public class Main {
                 }else if(plate.getBagEat() >=0 &&plate.getFood()<cat[i].getAppetite()){
                     System.out.println(cat[i].notEat(plate));
                 }
-                plate.getBagEat();
                 if(plate.getBagEat() == 0 && plate.getFood()< cat[i].getAppetite()){
                     j = numberOfMeals;
                     break;
@@ -32,7 +31,8 @@ public class Main {
         }
         System.out.print("Котов поело: "+ Cat.getCountEat());
         System.out.println(". Подходило к миске: "+ catEat);
-        if(Cat.getCountEat() != cat.length * numberOfMeals) System.out.println("Еда кончилась, коты не наелись!");
+        if(catEat != cat.length * numberOfMeals) System.out.println("Еда кончилась, коты не наелись!");
+        else System.out.println("Хватило на всех)");
     }
 }
 
