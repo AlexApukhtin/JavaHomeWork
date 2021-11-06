@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args) {
         final int numberOfMeals = 5;
         Cat[] cat = new Cat[]{
-                new Cat(NameCats.BASYA.name(), 0, false),
-                new Cat(NameCats.MURZIK.name(), 0, false),
-                new Cat(NameCats.VASYA.name(), 0, false),
-                new Cat(NameCats.MAYKA.name(), 0, false),
-                new Cat(NameCats.TIMOFHEY.name(), 0, false)
+                new Cat(NameCats.BASYA.name()),
+                new Cat(NameCats.MURZIK.name()),
+                new Cat(NameCats.VASYA.name()),
+                new Cat(NameCats.MAYKA.name()),
+                new Cat(NameCats.TIMOFHEY.name())
         };
         Plate plate = new Plate(50);
 

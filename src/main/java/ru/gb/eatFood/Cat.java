@@ -8,10 +8,10 @@ public class Cat {
     private boolean satiety;
     private static int countEat;
 
-    public Cat(String name, int appetite, boolean satiety) {
+    public Cat(String name) {
         this.name = name;
-        this.appetite = appetite;
-        this.satiety = satiety;
+        this.appetite = 0;
+        this.satiety = false;
     }
 
     public static int getCountEat() {return countEat;}
