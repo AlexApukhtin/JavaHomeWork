@@ -30,7 +30,7 @@ public class Cat {
         return this.appetite;
     }
 
-    public int isEat(Plate plate, Cat cat) {
+    public int haveEat(Plate plate, Cat cat) {
         plate.decreaseFood(this.appetite);
         this.satiety = true;
         countEat++;
